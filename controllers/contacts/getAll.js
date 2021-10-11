@@ -1,8 +1,9 @@
-const { contactsOperations } = require("../../model/contacts");
+const { sendSuccessRes } = require("../../helpers");
+const { Contact } = require("../../models/contact");
 
-const getAll = async (res) => {
-  const contacts = await contactsOperations.listContacts();
-  res.json({ status: "success", code: 200, payload: contacts });
+const getAll = async (req, res) => {
+  const result = await Contact.find({}, "_id name email phone favorite");
+  sendSuccessRes(res, { result });
 };
 
 module.exports = getAll;
