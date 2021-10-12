@@ -44,6 +44,5 @@
 - `yarn add http-errors`
 - `yarn add jsonwebtoken`
 - `yarn add bcryptjs`
-- `yarn add gravatar`
 - `yarn add jimp`
 - `yarn add single`
