@@ -6,6 +6,7 @@ const {
   controllerWrapper,
   validation,
   authenticate,
+  upload,
 } = require("../../middlewares");
 
 router.post(
@@ -15,6 +16,8 @@ router.post(
 );
 
 router.post("/login", validation(joiUserSchema), controllerWrapper(ctrl.login));
+
+router.patch("/avatars", authenticate, upload.single("avatar"), ctrl.avatars);
 
 router.get("/logout", authenticate, controllerWrapper(ctrl.logout));
 router.get("/current", authenticate, controllerWrapper(ctrl.current));

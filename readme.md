@@ -46,3 +46,7 @@
 - `yarn add bcryptjs`
 - `yarn add jimp`
 - `yarn add single`
+  /////////////
+- `yarn add multer`
+- `yarn add gravatar`
+- `yarn add jimp`
