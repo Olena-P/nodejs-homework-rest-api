@@ -39,3 +39,10 @@
 - `yarn start:dev`
 - `yarn add express cors mongoose`
 - `yarn add dotenv`
+  //////////////
+- `yarn add joi`
+- `yarn add http-errors`
+- `yarn add jsonwebtoken`
+- `yarn add bcryptjs`
+- `yarn add jimp`
+- `yarn add single`
