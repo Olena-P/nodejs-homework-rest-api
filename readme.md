@@ -50,3 +50,5 @@
 - `yarn add multer`
 - `yarn add gravatar`
 - `yarn add jimp`
+
+# http://localhost:3000/avatars/olena.png
